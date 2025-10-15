@@ -6,6 +6,5 @@ pydantic
 streamlit
 requests
 nltk
-re
 numpy
 pandas
