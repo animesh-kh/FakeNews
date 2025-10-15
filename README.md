@@ -33,5 +33,5 @@ Built with **FastAPI**, **Streamlit**, and a **scikit-learn ML model**, ready fo
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/fake-news-detector.git
-cd fake-news-detector
+git clone https://github.com/animesh_kh/FakeNews.git
+cd FakeNews
