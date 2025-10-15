@@ -31,6 +31,7 @@ def predict(news: NewsItem):
     text = news.text
     transformed = vectorizer.transform([text])
     prediction = model.predict(transformed)[0]
+    probs = model.predict_proba(transformed)
     label = "FAKE" if prediction == 0 else "REAL"
 
-    return {"prediction": label,"confidence": 0.99}
+    return {"prediction": label,"confidence": max(probs[0])}

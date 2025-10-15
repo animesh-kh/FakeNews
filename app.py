@@ -9,10 +9,8 @@ st.write("Enter a news headline or article and let the AI decide if it’s real 
 # Text input
 news_text = st.text_area("Enter the news text here:")
 
-# When user clicks button
 if st.button("Predict"):
     if news_text.strip():
-        # Make POST request to FastAPI
         url = "http://127.0.0.1:8000/predict"
         response = requests.post(url, json={"text": news_text})
 
